@@ -1,6 +1,5 @@
 import React from "react";
 import VideoModal from "../ModalVideo";
-import { Link } from "react-router-dom";
 import abimg1 from "../../images/about/img-2.png";
 import abimg2 from "../../images/about/img-1.png";
 
@@ -33,11 +32,7 @@ const AboutSection = () => {
                 provide advice and assistance from law students supervised by
                 qualified solicitors and academics.
               </p>
-              {/* <div className="btns">
-                <div className="btn-style">
-                  <Link to="/">More About Us..</Link>
-                </div>
-              </div> */}
+
               <div className="signature">
                 <img src={abimg2} alt="" />
               </div>

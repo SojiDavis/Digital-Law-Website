@@ -6,7 +6,6 @@ import fe2 from "../../images/icon/2.png";
 import fe3 from "../../images/icon/3.png";
 
 import "./style.css";
-import { HashLink } from "react-router-hash-link";
 
 const Features = () => {
   return (
@@ -41,7 +40,6 @@ const Features = () => {
                 <h3>
                   <a href="#contact-form">Expert Advice</a>
                 </h3>
-                {/* <h3>Expert Advice</h3> */}
               </div>
             </div>
           </div>
