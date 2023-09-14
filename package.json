@@ -1,0 +1,67 @@
+{
+  "name": "Digital Law Website",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.9.9",
+    "@nlpjs/nlu": "^4.27.0",
+    "animate-css-grid": "^1.4.3",
+    "bootstrap": "^4.3.1",
+    "express": "^4.18.2",
+    "imagesloaded": "^4.1.4",
+    "intl": "^1.2.5",
+    "isotope-layout": "^3.0.6",
+    "mysql": "^2.18.1",
+    "node-nlp": "^3.10.2",
+    "node-nlp-rn": "^3.5.2",
+    "node-sass": "^4.13.1",
+    "react": "^16.12.0",
+    "react-anchor-link-smooth-scroll": "^1.0.12",
+    "react-animated-css": "^1.2.1",
+    "react-bootstrap": "^1.0.0",
+    "react-chatbot-kit": "^2.1.2",
+    "react-countdown-now": "^2.1.2",
+    "react-dom": "^16.12.0",
+    "react-fancybox": "^0.2.5",
+    "react-fontawesome": "^1.7.1",
+    "react-intl": "^6.4.4",
+    "react-modal-video": "^1.2.3",
+    "react-native-dialogflow": "^3.0.3",
+    "react-native-gifted-chat": "^2.4.0",
+    "react-owl-carousel": "^2.3.1",
+    "react-particles-js": "^2.7.1",
+    "react-perfect-scrollbar": "^1.5.8",
+    "react-router-hash-link": "^2.4.3",
+    "react-scripts": "3.1.1",
+    "react-scroll": "^1.7.16",
+    "react-simple-chatbot": "^0.5.0",
+    "react-slick": "^0.25.2",
+    "react-sticky-header": "^0.2.0",
+    "reactjs-countdown": "0.0.8",
+    "reactstrap": "^8.2.0",
+    "slick-carousel": "^1.8.1",
+    "react-util-kit": "^0.0.14",
+    "url": "^0.11.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

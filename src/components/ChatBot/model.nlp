@@ -1,0 +1,899 @@
+{
+  "settings": {
+    "languages": [
+      "en"
+    ]
+  },
+  "nluManager": {
+    "settings": {},
+    "languages": [
+      "en"
+    ],
+    "intentDomains": {},
+    "domainManagers": {
+      "en": {
+        "settings": {
+          "language": "en",
+          "useNoneFeature": true,
+          "config": {
+            "activation": "leaky-relu",
+            "hiddenLayers": [],
+            "iterations": 20000,
+            "learningRate": 0.7,
+            "errorThresh": 0.00005,
+            "momentum": 0.5,
+            "deltaErrorThresh": 0.000001,
+            "maxDecimals": 9,
+            "leakyReluAlpha": 0.08,
+            "timeout": 120000
+          }
+        },
+        "language": "en",
+        "nluClassName": "BrainNLU",
+        "useMasterDomain": true,
+        "trainByDomain": false,
+        "keepStopwords": true,
+        "stemDict": {
+          "hello": {
+            "domain": "default",
+            "intent": "greeting"
+          },
+          "hi": {
+            "domain": "default",
+            "intent": "greeting"
+          },
+          "hey,you": {
+            "domain": "default",
+            "intent": "greeting"
+          },
+          "yo": {
+            "domain": "default",
+            "intent": "greeting"
+          },
+          "good,morn": {
+            "domain": "default",
+            "intent": "greeting"
+          },
+          "afternoon,good": {
+            "domain": "default",
+            "intent": "greeting"
+          },
+          "day,good": {
+            "domain": "default",
+            "intent": "greeting"
+          },
+          "go,i,must": {
+            "domain": "default",
+            "intent": "greeting.bye"
+          },
+          "catch,later,you": {
+            "domain": "default",
+            "intent": "greeting.bye"
+          },
+          "famili,issu": {
+            "domain": "default",
+            "intent": "family.law"
+          },
+          "injuri,person": {
+            "domain": "default",
+            "intent": "injury.law"
+          },
+          "accid,an,met": {
+            "domain": "default",
+            "intent": "injury.law"
+          },
+          "attack,crimin": {
+            "domain": "default",
+            "intent": "criminal.law"
+          },
+          "busi,cheat": {
+            "domain": "default",
+            "intent": "business.law"
+          },
+          "educ,problem": {
+            "domain": "default",
+            "intent": "education.law"
+          },
+          "agreement,estat,real": {
+            "domain": "default",
+            "intent": "real.law"
+          },
+          "thank,you": {
+            "domain": "default",
+            "intent": "thank"
+          }
+        },
+        "intentDict": {
+          "greeting": "default",
+          "greeting.bye": "default",
+          "family.law": "default",
+          "injury.law": "default",
+          "criminal.law": "default",
+          "business.law": "default",
+          "education.law": "default",
+          "real.law": "default",
+          "thank": "default"
+        },
+        "useStemDict": true,
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "language": "en",
+              "useNoneFeature": true,
+              "config": {
+                "activation": "leaky-relu",
+                "hiddenLayers": [],
+                "iterations": 20000,
+                "learningRate": 0.7,
+                "errorThresh": 0.00005,
+                "momentum": 0.5,
+                "deltaErrorThresh": 0.000001,
+                "maxDecimals": 9,
+                "leakyReluAlpha": 0.08,
+                "timeout": 120000
+              }
+            },
+            "language": "en",
+            "keepStopwords": true,
+            "docs": [
+              {
+                "intent": "greeting",
+                "tokens": [
+                  "hello"
+                ]
+              },
+              {
+                "intent": "greeting",
+                "tokens": [
+                  "hi"
+                ]
+              },
+              {
+                "intent": "greeting",
+                "tokens": [
+                  "hey",
+                  "you"
+                ]
+              },
+              {
+                "intent": "greeting",
+                "tokens": [
+                  "yo"
+                ]
+              },
+              {
+                "intent": "greeting",
+                "tokens": [
+                  "good",
+                  "morn"
+                ]
+              },
+              {
+                "intent": "greeting",
+                "tokens": [
+                  "good",
+                  "afternoon"
+                ]
+              },
+              {
+                "intent": "greeting",
+                "tokens": [
+                  "good",
+                  "day"
+                ]
+              },
+              {
+                "intent": "greeting.bye",
+                "tokens": [
+                  "i",
+                  "must",
+                  "go"
+                ]
+              },
+              {
+                "intent": "greeting.bye",
+                "tokens": [
+                  "catch",
+                  "you",
+                  "later"
+                ]
+              },
+              {
+                "intent": "family.law",
+                "tokens": [
+                  "famili",
+                  "issu"
+                ]
+              },
+              {
+                "intent": "injury.law",
+                "tokens": [
+                  "person",
+                  "injuri"
+                ]
+              },
+              {
+                "intent": "injury.law",
+                "tokens": [
+                  "met",
+                  "an",
+                  "accid"
+                ]
+              },
+              {
+                "intent": "criminal.law",
+                "tokens": [
+                  "crimin",
+                  "attack"
+                ]
+              },
+              {
+                "intent": "business.law",
+                "tokens": [
+                  "busi",
+                  "cheat"
+                ]
+              },
+              {
+                "intent": "education.law",
+                "tokens": [
+                  "educ",
+                  "problem"
+                ]
+              },
+              {
+                "intent": "real.law",
+                "tokens": [
+                  "real",
+                  "estat",
+                  "agreement"
+                ]
+              },
+              {
+                "intent": "thank",
+                "tokens": [
+                  "thank",
+                  "you"
+                ]
+              }
+            ],
+            "features": {
+              "hello": 1,
+              "hi": 1,
+              "hey": 1,
+              "you": 3,
+              "yo": 1,
+              "good": 3,
+              "morn": 1,
+              "afternoon": 1,
+              "day": 1,
+              "i": 1,
+              "must": 1,
+              "go": 1,
+              "catch": 1,
+              "later": 1,
+              "famili": 1,
+              "issu": 1,
+              "person": 1,
+              "injuri": 1,
+              "met": 1,
+              "an": 1,
+              "accid": 1,
+              "crimin": 1,
+              "attack": 1,
+              "busi": 1,
+              "cheat": 1,
+              "educ": 1,
+              "problem": 1,
+              "real": 1,
+              "estat": 1,
+              "agreement": 1,
+              "thank": 1
+            },
+            "isEditing": false,
+            "className": "BrainNLU",
+            "classifier": {
+              "className": "BrainClassifier",
+              "settings": {
+                "language": "en",
+                "useNoneFeature": true,
+                "config": {
+                  "activation": "leaky-relu",
+                  "hiddenLayers": [],
+                  "iterations": 20000,
+                  "learningRate": 0.7,
+                  "errorThresh": 0.00005,
+                  "momentum": 0.5,
+                  "deltaErrorThresh": 0.000001,
+                  "maxDecimals": 9,
+                  "leakyReluAlpha": 0.08,
+                  "timeout": 120000
+                }
+              },
+              "labels": [],
+              "network": {
+                "sizes": [
+                  32,
+                  10
+                ],
+                "layers": [
+                  {
+                    "hello": {},
+                    "hi": {},
+                    "hey": {},
+                    "you": {},
+                    "yo": {},
+                    "good": {},
+                    "morn": {},
+                    "afternoon": {},
+                    "day": {},
+                    "i": {},
+                    "must": {},
+                    "go": {},
+                    "catch": {},
+                    "later": {},
+                    "famili": {},
+                    "issu": {},
+                    "person": {},
+                    "injuri": {},
+                    "met": {},
+                    "an": {},
+                    "accid": {},
+                    "crimin": {},
+                    "attack": {},
+                    "busi": {},
+                    "cheat": {},
+                    "educ": {},
+                    "problem": {},
+                    "real": {},
+                    "estat": {},
+                    "agreement": {},
+                    "thank": {},
+                    "nonefeature": {}
+                  },
+                  {
+                    "greeting": {
+                      "bias": 4.550358351,
+                      "weights": {
+                        "hello": 7.737290859,
+                        "hi": 7.744633198,
+                        "hey": 7.392261505,
+                        "you": 0.285361737,
+                        "yo": 7.631337643,
+                        "good": 5.926412582,
+                        "morn": 1.986805677,
+                        "afternoon": 1.977278471,
+                        "day": 1.962333441,
+                        "i": -1.532572746,
+                        "must": -1.532572746,
+                        "go": -1.532572746,
+                        "catch": -2.489177704,
+                        "later": -2.489177704,
+                        "famili": -2.291329861,
+                        "issu": -2.291329861,
+                        "person": -2.289080381,
+                        "injuri": -2.289080381,
+                        "met": -1.530643463,
+                        "an": -1.530643463,
+                        "accid": -1.530643463,
+                        "crimin": -2.28553009,
+                        "attack": -2.28553009,
+                        "busi": -2.282620668,
+                        "cheat": -2.282620668,
+                        "educ": -2.279370546,
+                        "problem": -2.279370546,
+                        "real": -1.526446581,
+                        "estat": -1.526446581,
+                        "agreement": -1.526446581,
+                        "thank": -4.617722988,
+                        "nonefeature": -4.174551487
+                      }
+                    },
+                    "greeting.bye": {
+                      "bias": 0.45379356,
+                      "weights": {
+                        "hello": -0.471093953,
+                        "hi": -0.464899123,
+                        "hey": -1.886780739,
+                        "you": 1.469657063,
+                        "yo": -0.443832606,
+                        "good": -0.391727746,
+                        "morn": -0.139578506,
+                        "afternoon": -0.131039903,
+                        "day": -0.121109344,
+                        "i": 4.015250206,
+                        "must": 4.015250206,
+                        "go": 4.015250206,
+                        "catch": 5.275981903,
+                        "later": 5.275981903,
+                        "famili": -0.377972603,
+                        "issu": -0.377972603,
+                        "person": -0.368710697,
+                        "injuri": -0.368710697,
+                        "met": -0.280307144,
+                        "an": -0.280307144,
+                        "accid": -0.280307144,
+                        "crimin": -0.356286526,
+                        "attack": -0.356286526,
+                        "busi": -0.349028558,
+                        "cheat": -0.349028558,
+                        "educ": -0.341745168,
+                        "problem": -0.341745168,
+                        "real": -0.253535479,
+                        "estat": -0.253535479,
+                        "agreement": -0.253535479,
+                        "thank": -1.91954422,
+                        "nonefeature": -0.4785043
+                      }
+                    },
+                    "family.law": {
+                      "bias": 0.549037362,
+                      "weights": {
+                        "hello": -0.538597763,
+                        "hi": -0.533583105,
+                        "hey": -0.153129488,
+                        "you": -0.431649357,
+                        "yo": -0.52747941,
+                        "good": -0.433350623,
+                        "morn": -0.151018843,
+                        "afternoon": -0.144548252,
+                        "day": -0.137783572,
+                        "i": -0.190126985,
+                        "must": -0.190126985,
+                        "go": -0.190126985,
+                        "catch": -0.071714811,
+                        "later": -0.071714811,
+                        "famili": 5.961670399,
+                        "issu": 5.961670399,
+                        "person": -0.31355539,
+                        "injuri": -0.31355539,
+                        "met": -0.221506044,
+                        "an": -0.221506044,
+                        "accid": -0.221506044,
+                        "crimin": -0.309066087,
+                        "attack": -0.309066087,
+                        "busi": -0.306406498,
+                        "cheat": -0.306406498,
+                        "educ": -0.303966463,
+                        "problem": -0.303966463,
+                        "real": -0.210684121,
+                        "estat": -0.210684121,
+                        "agreement": -0.210684121,
+                        "thank": -0.206805021,
+                        "nonefeature": -0.543776393
+                      }
+                    },
+                    "injury.law": {
+                      "bias": 0.918090716,
+                      "weights": {
+                        "hello": -0.90544498,
+                        "hi": -0.898152173,
+                        "hey": -0.258627892,
+                        "you": -0.73686105,
+                        "yo": -0.889304042,
+                        "good": -0.735714853,
+                        "morn": -0.259020984,
+                        "afternoon": -0.245357096,
+                        "day": -0.231336683,
+                        "i": -0.320915639,
+                        "must": -0.320915639,
+                        "go": -0.320915639,
+                        "catch": -0.120400824,
+                        "later": -0.120400824,
+                        "famili": -0.466691047,
+                        "issu": -0.466691047,
+                        "person": 5.777105808,
+                        "injuri": 5.777105808,
+                        "met": 3.858391523,
+                        "an": 3.858391523,
+                        "accid": 3.858391523,
+                        "crimin": -0.528826058,
+                        "attack": -0.528826058,
+                        "busi": -0.522631407,
+                        "cheat": -0.522631407,
+                        "educ": -0.517571867,
+                        "problem": -0.517571867,
+                        "real": -0.364508539,
+                        "estat": -0.364508539,
+                        "agreement": -0.364508539,
+                        "thank": -0.357832462,
+                        "nonefeature": -0.912807465
+                      }
+                    },
+                    "criminal.law": {
+                      "bias": 0.556199756,
+                      "weights": {
+                        "hello": -0.546505809,
+                        "hi": -0.541692376,
+                        "hey": -0.155369505,
+                        "you": -0.441871881,
+                        "yo": -0.535827696,
+                        "good": -0.441688389,
+                        "morn": -0.155185789,
+                        "afternoon": -0.147281766,
+                        "day": -0.139220789,
+                        "i": -0.192947581,
+                        "must": -0.192947581,
+                        "go": -0.192947581,
+                        "catch": -0.072371066,
+                        "later": -0.072371066,
+                        "famili": -0.281616509,
+                        "issu": -0.281616509,
+                        "person": -0.280716181,
+                        "injuri": -0.280716181,
+                        "met": -0.190021008,
+                        "an": -0.190021008,
+                        "accid": -0.190021008,
+                        "crimin": 5.958738804,
+                        "attack": 5.958738804,
+                        "busi": -0.313574046,
+                        "cheat": -0.313574046,
+                        "educ": -0.310576826,
+                        "problem": -0.310576826,
+                        "real": -0.218028113,
+                        "estat": -0.218028113,
+                        "agreement": -0.218028113,
+                        "thank": -0.214131281,
+                        "nonefeature": -0.551443338
+                      }
+                    },
+                    "business.law": {
+                      "bias": 0.558096312,
+                      "weights": {
+                        "hello": -0.548736393,
+                        "hi": -0.544013262,
+                        "hey": -0.15661177,
+                        "you": -0.446937293,
+                        "yo": -0.538248062,
+                        "good": -0.445765793,
+                        "morn": -0.157298923,
+                        "afternoon": -0.148667082,
+                        "day": -0.139799878,
+                        "i": -0.194134042,
+                        "must": -0.194134042,
+                        "go": -0.194134042,
+                        "catch": -0.072965361,
+                        "later": -0.072965361,
+                        "famili": -0.28258732,
+                        "issu": -0.28258732,
+                        "person": -0.281649143,
+                        "injuri": -0.281649143,
+                        "met": -0.190814778,
+                        "an": -0.190814778,
+                        "accid": -0.190814778,
+                        "crimin": -0.280537933,
+                        "attack": -0.280537933,
+                        "busi": 5.958055496,
+                        "cheat": 5.958055496,
+                        "educ": -0.313528538,
+                        "problem": -0.313528538,
+                        "real": -0.221522048,
+                        "estat": -0.221522048,
+                        "agreement": -0.221522048,
+                        "thank": -0.217360184,
+                        "nonefeature": -0.553566158
+                      }
+                    },
+                    "education.law": {
+                      "bias": 0.559866877,
+                      "weights": {
+                        "hello": -0.55084914,
+                        "hi": -0.546218157,
+                        "hey": -0.15815638,
+                        "you": -0.453257501,
+                        "yo": -0.540551305,
+                        "good": -0.450504929,
+                        "morn": -0.159574702,
+                        "afternoon": -0.150318667,
+                        "day": -0.140611559,
+                        "i": -0.195501074,
+                        "must": -0.195501074,
+                        "go": -0.195501074,
+                        "catch": -0.073791772,
+                        "later": -0.073791772,
+                        "famili": -0.283474058,
+                        "issu": -0.283474058,
+                        "person": -0.282512307,
+                        "injuri": -0.282512307,
+                        "met": -0.191669539,
+                        "an": -0.191669539,
+                        "accid": -0.191669539,
+                        "crimin": -0.281412661,
+                        "attack": -0.281412661,
+                        "busi": -0.280757099,
+                        "cheat": -0.280757099,
+                        "educ": 5.95743227,
+                        "problem": 5.95743227,
+                        "real": -0.225609645,
+                        "estat": -0.225609645,
+                        "agreement": -0.225609645,
+                        "thank": -0.22130926,
+                        "nonefeature": -0.555569351
+                      }
+                    },
+                    "real.law": {
+                      "bias": 0.359346262,
+                      "weights": {
+                        "hello": -0.359509021,
+                        "hi": -0.357275397,
+                        "hey": -0.118726522,
+                        "you": -0.347371131,
+                        "yo": -0.354357034,
+                        "good": -0.337560982,
+                        "morn": -0.122493505,
+                        "afternoon": -0.113090068,
+                        "day": -0.10197743,
+                        "i": -0.140068859,
+                        "must": -0.140068859,
+                        "go": -0.140068859,
+                        "catch": -0.057687826,
+                        "later": -0.057687826,
+                        "famili": -0.190875575,
+                        "issu": -0.190875575,
+                        "person": -0.188969716,
+                        "injuri": -0.188969716,
+                        "met": -0.133306623,
+                        "an": -0.133306623,
+                        "accid": -0.133306623,
+                        "crimin": -0.186544269,
+                        "attack": -0.186544269,
+                        "busi": -0.185235485,
+                        "cheat": -0.185235485,
+                        "educ": -0.184122801,
+                        "problem": -0.184122801,
+                        "real": 4.046336651,
+                        "estat": 4.046336651,
+                        "agreement": 4.046336651,
+                        "thank": -0.170956716,
+                        "nonefeature": -0.362414509
+                      }
+                    },
+                    "thank": {
+                      "bias": 0.31911829,
+                      "weights": {
+                        "hello": -0.36253801,
+                        "hi": -0.356290936,
+                        "hey": -3.416088581,
+                        "you": 3.3517766,
+                        "yo": -0.298498005,
+                        "good": -0.276007801,
+                        "morn": -0.100696102,
+                        "afternoon": -0.092154361,
+                        "day": -0.083157316,
+                        "i": -0.113771647,
+                        "must": -0.113771647,
+                        "go": -0.113771647,
+                        "catch": -1.801592946,
+                        "later": -1.801592946,
+                        "famili": -0.149799407,
+                        "issu": -0.149799407,
+                        "person": -0.149541557,
+                        "injuri": -0.149541557,
+                        "met": -0.100309812,
+                        "an": -0.100309812,
+                        "accid": -0.100309812,
+                        "crimin": -0.149128869,
+                        "attack": -0.149128869,
+                        "busi": -0.148816407,
+                        "cheat": -0.148816407,
+                        "educ": -0.148474187,
+                        "problem": -0.148474187,
+                        "real": -0.099780545,
+                        "estat": -0.099780545,
+                        "agreement": -0.099780545,
+                        "thank": 8.569460869,
+                        "nonefeature": -0.369534254
+                      }
+                    },
+                    "None": {
+                      "bias": 1.139708713,
+                      "weights": {
+                        "hello": -1.05163765,
+                        "hi": -1.039133072,
+                        "hey": -0.35585162,
+                        "you": -0.80366385,
+                        "yo": -1.02434504,
+                        "good": -0.838255167,
+                        "morn": -0.283486694,
+                        "afternoon": -0.279865175,
+                        "day": -0.274903238,
+                        "i": -0.371150404,
+                        "must": -0.371150404,
+                        "go": -0.371150404,
+                        "catch": -0.17107293,
+                        "later": -0.17107293,
+                        "famili": -0.549693584,
+                        "issu": -0.549693584,
+                        "person": -0.548162401,
+                        "injuri": -0.548162401,
+                        "met": -0.369347006,
+                        "an": -0.369347006,
+                        "accid": -0.369347006,
+                        "crimin": -0.545693517,
+                        "attack": -0.545693517,
+                        "busi": -0.543894887,
+                        "cheat": -0.543894887,
+                        "educ": -0.541944265,
+                        "problem": -0.541944265,
+                        "real": -0.366049916,
+                        "estat": -0.366049916,
+                        "agreement": -0.366049916,
+                        "thank": -0.276739091,
+                        "nonefeature": 10.842308044
+                      }
+                    }
+                  }
+                ],
+                "trainOpts": {
+                  "iterations": 20000,
+                  "errorThresh": 0.00005,
+                  "fixedError": false,
+                  "deltaErrorThresh": 0.000001,
+                  "learningRate": 0.7,
+                  "momentum": 0.5,
+                  "leakyReluAlpha": 0.08,
+                  "maxDecimals": 9,
+                  "log": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "extraSentences": [
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hey you"
+      ],
+      [
+        "en",
+        "yo"
+      ],
+      [
+        "en",
+        "good morning"
+      ],
+      [
+        "en",
+        "good afternoon"
+      ],
+      [
+        "en",
+        "good day"
+      ],
+      [
+        "en",
+        "I must go"
+      ],
+      [
+        "en",
+        "Catch you later"
+      ],
+      [
+        "en",
+        "family issues"
+      ],
+      [
+        "en",
+        "personal Injury "
+      ],
+      [
+        "en",
+        "met an accident "
+      ],
+      [
+        "en",
+        "criminal attack"
+      ],
+      [
+        "en",
+        "business cheat"
+      ],
+      [
+        "en",
+        "education problem"
+      ],
+      [
+        "en",
+        "real estate agreement"
+      ],
+      [
+        "en",
+        "Thank you"
+      ]
+    ]
+  },
+  "nerManager": {
+    "settings": {},
+    "threshold": 0.8,
+    "builtins": [
+      "Number",
+      "Ordinal",
+      "Percentage",
+      "Age",
+      "Currency",
+      "Dimension",
+      "Temperature",
+      "DateTime",
+      "PhoneNumber",
+      "IpAddress",
+      "Boolean",
+      "Email",
+      "Hashtag",
+      "URL"
+    ],
+    "namedEntities": {}
+  },
+  "slotManager": {},
+  "responses": {
+    "en": {
+      "greeting": [
+        {
+          "response": "Hey"
+        },
+        {
+          "response": "Hey there"
+        },
+        {
+          "response": "Hi"
+        },
+        {
+          "response": "yo whatsup?"
+        }
+      ],
+      "greeting.bye": [
+        {
+          "response": "see you soon!"
+        }
+      ],
+      "thank": [
+        {
+          "response": "You are Welcome!"
+        }
+      ],
+      "family.law": [
+        {
+          "response": "please navigate to family law page from practices for more details"
+        }
+      ],
+      "injury.law": [
+        {
+          "response": "please navigate to personal Injury Details law page from practices for more details"
+        }
+      ],
+      "criminal.law": [
+        {
+          "response": "please navigate to criminal law page from practices for more details"
+        }
+      ],
+      "business.law": [
+        {
+          "response": "please navigate to business law page from practices for more details"
+        }
+      ],
+      "education.law": [
+        {
+          "response": "please navigate to education law page from practices for more details"
+        }
+      ],
+      "real.law": [
+        {
+          "response": "please navigate to real estate law page from practices for more details"
+        }
+      ]
+    }
+  },
+  "actions": {},
+  "utteranceDict": {
+    "?": "help"
+  }
+}
