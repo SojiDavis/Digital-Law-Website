@@ -9,6 +9,7 @@ import "./css/responsive.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 ReactDOM.render(
+  console.log("inside index"),
   <React.StrictMode>
     <HashRouter>
       <App />
