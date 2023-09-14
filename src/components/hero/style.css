@@ -2,7 +2,7 @@
 .hero {
   position: relative;
   height: 800px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .slide {
   position: relative;
