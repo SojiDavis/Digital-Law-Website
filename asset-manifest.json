@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Digital-Law-Website/static/css/main.d55d7043.css",
-    "main.js": "/Digital-Law-Website/static/js/main.be222336.js",
+    "main.js": "/Digital-Law-Website/static/js/main.e4900943.js",
     "static/media/img-2.png": "/Digital-Law-Website/static/media/img-2.79bbc12bfa252e354cf6.png",
     "static/media/main_background (1).png": "/Digital-Law-Website/static/media/main_background (1).ddb5de892bf44c2f3866.png",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/Digital-Law-Website/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
@@ -22,10 +22,10 @@
     "static/media/slick.woff": "/Digital-Law-Website/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Digital-Law-Website/index.html",
     "main.d55d7043.css.map": "/Digital-Law-Website/static/css/main.d55d7043.css.map",
-    "main.be222336.js.map": "/Digital-Law-Website/static/js/main.be222336.js.map"
+    "main.e4900943.js.map": "/Digital-Law-Website/static/js/main.e4900943.js.map"
   },
   "entrypoints": [
     "static/css/main.d55d7043.css",
-    "static/js/main.be222336.js"
+    "static/js/main.e4900943.js"
   ]
 }
