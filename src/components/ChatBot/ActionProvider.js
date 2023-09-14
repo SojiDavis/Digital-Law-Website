@@ -56,7 +56,7 @@ class ActionProvider {
   };
   rephrase = () => {
     const message = this.createChatBotMessage(
-      "Sorry ! I didnt get you.. You can find more details in the practice sections"
+      "Sorry ! I didnt get you..  For additional information, please refer to the practice sections or reach out to us through the contact form on the contact page. "
     );
     this.addMessageToState(message);
   };
