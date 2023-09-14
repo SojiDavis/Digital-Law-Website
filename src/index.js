@@ -7,7 +7,7 @@ import * as serviceWorker from "./serviceWorker";
 import "./css/font-awesome.min.css";
 import "./css/responsive.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+console.log("inside");
 ReactDOM.render(
   <React.StrictMode>
     <HashRouter>
