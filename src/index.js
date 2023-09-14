@@ -8,14 +8,13 @@ import "./css/font-awesome.min.css";
 import "./css/responsive.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-ReactDOM.render(
-  console.log("inside index"),
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
   <React.StrictMode>
     <HashRouter>
       <App />
     </HashRouter>
-  </React.StrictMode>,
-  document.getElementById("root")
+  </React.StrictMode>
 );
 
 // If you want your app to work offline and load faster, you can change
