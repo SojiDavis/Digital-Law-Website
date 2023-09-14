@@ -2,7 +2,7 @@
 .hero {
   position: relative;
   height: 800px;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 .slide {
   position: relative;
@@ -21,9 +21,7 @@
   height: 800px;
   position: relative;
   background-repeat: no-repeat;
-  display: flex!important;
   justify-content: center;
-  flex-direction: column;
   background: url("../../images/main_background\ \(1\).png") center center/cover no-repeat local;
   position: relative;
   background-attachment: fixed;
@@ -117,7 +115,7 @@
 .chat {
   opacity: 10;
 }
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+
 
 * {
     margin: 0;
@@ -154,11 +152,7 @@ body {
     max-height: 400px;
 }
 
-.wrapper .box .item {
-    display: flex;
-    float: left;
-    margin: 10px 0;
-}
+
 
 .wrapper .box .item .icon {
     background:skyblue;
@@ -221,71 +215,20 @@ body {
     border-color: gray;
 }
 
-/* .wrapper .typing-area .input-field button {
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    background: transparent;
-    border: 1px solid gray;
-    padding: 5px 10px;
-    border-radius: 3px;
-    color: black;
-    outline: none;
-    cursor: pointer;
-    opacity: 3;
-    pointer-events: none; 
-    transition: 0.3s all ease;
-    background-color: gray;
-} */
-
-/* .wrapper .typing-area .input-field button:hover {
-    background: gray;
-    color: white;
-} */
-
-/* .wrapper .typing-area .input-field input:valid ~ button {
-    opacity: 1;
-    pointer-events: auto;
-} */
-
-
-
-
-/*================================
-  0.4 hero style 1
-================================*/
-.hero-style-1 .slide-caption p, .hero-style-2 .slide-caption p, .hero-style-3 .slide-caption p {
-  font-size: 16px;
-  color: #fff;
-  line-height:30px;
-  font-weight: 300;
-  margin-bottom: 40px;
-}
-.hero-style-1 .slide-caption p span, .hero-style-2 .slide-caption p span, .hero-style-3 .slide-caption p span{
-  color: #c1b696;
-  
-}
-
-.hero-style-1 .slide-caption span, .hero-style-2 .slide-caption span, .hero-style-3 .slide-caption span{
-    margin-bottom: 10px;
-    display: inline-block;
+@media (max-width: 1062px) {
+  .hero-style-1 .slide-caption h2, .hero-style-2 .slide-caption h2, .hero-style-3 .slide-caption h2 {
     font-size: 30px;
-    font-weight: 400;
-    font-family: 'Montserrat', sans-serif;
-    color:#fff;
-}
-.hero-style-2 .slide-caption h2 {
-  font-size: 44px;
-  font-weight: 700;
-  color:#fff;
-  line-height: 90px;
-  margin: 10px 0 20px;
+  }
+  .row{
+    padding-top: 100px;
+  }
+
 }
 @media (max-width: 450px) {
   .hero-style-1 .slide-caption h2, .hero-style-2 .slide-caption h2, .hero-style-3 .slide-caption h2 {
     font-size: 30px;
   }
+
 }
 
 @media (max-width: 450px) {

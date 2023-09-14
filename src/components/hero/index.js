@@ -9,6 +9,7 @@ import config from "../ChatBot/config";
 import ActionProvider from "../ChatBot/ActionProvider";
 import MessageParser from "../ChatBot/MessageParser";
 import "./style.css";
+import { red } from "@material-ui/core/colors";
 
 const SimpleSlider = () => {
   return (
@@ -18,16 +19,7 @@ const SimpleSlider = () => {
           <div className="container">
             <div className="row">
               {/* <div className="col-lg-4 col-md-12 col-12 p-p"> */}
-              <div className="wrapper">
-                <div className="ccol col-lg-8 slide-caption">
-                  <h2>
-                    We Fight for your rights with the same dedication and care
-                    as a trusted friend..
-                  </h2>
-                </div>
-              </div>
-              {/* </div> */}
-              <div className="wrapper">
+              <div className="col-lg-4 col-md-6 col-12">
                 <div className="chat">
                   <div style={{ maxWidth: "1000px" }}>
                     <Chatbot
@@ -38,6 +30,12 @@ const SimpleSlider = () => {
                   </div>
                 </div>
               </div>
+              <div className="col-lg-4 col-md-6 col-12">
+                <div className="ccol col-lg-8 slide-caption">
+                  <h2 style={{ color: red }}>We Fight for your rights..</h2>
+                </div>
+              </div>
+              {/* </div> */}
             </div>
           </div>
         </div>
