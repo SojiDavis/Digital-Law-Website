@@ -4,6 +4,7 @@ class MessageParser {
   }
 
   parse(message) {
+    <index></index>;
     const lowercase = message.toLowerCase();
 
     if (lowercase.includes("hello") || lowercase.includes("hi ")) {

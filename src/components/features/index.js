@@ -24,7 +24,6 @@ const Features = () => {
                 <h3>
                   <Link to="/contact">Appointment</Link>
                 </h3>
-                {/* <h3 Link >Appointment</h3> */}
               </div>
             </div>
           </div>
@@ -38,7 +37,7 @@ const Features = () => {
               <div className="features-content">
                 <p>Get Free</p>
                 <h3>
-                  <a href="#contact-form">Expert Advice</a>
+                  <a href="#">Expert Advice</a>
                 </h3>
               </div>
             </div>

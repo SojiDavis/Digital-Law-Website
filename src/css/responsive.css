@@ -200,18 +200,7 @@
 	.info-outer {
 		padding: 20px 13px 0px 10px;
 	}
-	.Attorneys-content h3 {
-		font-size: 23px;
-	}
-	.Attorneys-content-section .studies-item .overlay-text .text-inner .sub {
-		margin-bottom: 0;
-	}
-	.Attorneys-content-section .studies-item .overlay-text .text-inner h3 {
-		font-size: 17px;
-	}
-	.Attorneys-content-section  .studies-item .overlay-text .text-inner h3:before{
-	  display: none;
-	}
+
 	}
 	/* Normal desktop :991px. */
 	

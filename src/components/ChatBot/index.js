@@ -59,16 +59,6 @@ manager.addAnswer(
 manager.train().then(async () => {
   manager.save();
   //route and handler
-  let response = await manager.process("en", "met an accident");
+  let response = await manager.process("en", ActionProvider.message);
   console.log(response);
 });
-// manager.train().then(async () => {
-//   manager.save();
-//   //route and handler
-//   app.get("/bot", async (req, res) => {
-//     let response = await manager.process("en", req.query.message);
-//     res.send(response.answer || "Please Rephrase");
-//   });
-
-//   app.listen(3034);
-// });

@@ -73,26 +73,7 @@ const Header = ({ posts, setSearchResults }) => {
                         </li>
                       </ul>
                     </li>
-                    {/* <li>
-                      <Link to="/">Blog</Link>
-                      <ul className="submenu">
-                        <li>
-                          <Link to="/blog">Blog Grid</Link>
-                        </li>
-                      </ul>
-                    </li> */}
-                    {/* <li>
-                      <Link to="/">Pages</Link>
-                      <ul className="submenu">
-                        <li>
-                          <Link to="/Attorneys">Attorneys</Link>
-                        </li>
 
-                        <li>
-                          <Link to="/faq">FAQ</Link>
-                        </li>
-                      </ul>
-                    </li> */}
                     <li>
                       <Link to="/contact">Contact</Link>
                     </li>

@@ -53,12 +53,11 @@ class ContactForm extends Component {
       error.events === "" &&
       error.notes === ""
     ) {
-      console.log("inside if");
       var url = "http://localhost/DigitalLawWebsite/ContactForm.php";
       var headers = {
         "Content-Type": "application/json",
       };
-      console.log(headers);
+
       var Data = {
         name: name,
         number: number,
@@ -66,7 +65,7 @@ class ContactForm extends Component {
         events: events,
         notes: notes,
       };
-      console.log(Data);
+
       fetch(url, {
         method: "POST",
         headers: headers,
